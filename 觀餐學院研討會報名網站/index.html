@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025觀光休閒、餐旅暨產業經營管理全國學術研討會</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Noto Sans TC -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        /* 自定義樣式 */
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./tnu_birdview.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .section-title {
+            @apply text-3xl font-bold text-center text-gray-800 mb-2;
+        }
+        .section-subtitle {
+            @apply text-center text-gray-500 mb-12;
+        }
+        .countdown-box {
+            @apply flex flex-col items-center justify-center bg-white p-4 rounded-lg shadow-md;
+        }
+        .countdown-number {
+            @apply text-4xl font-bold text-indigo-600;
+        }
+        .countdown-label {
+            @apply text-sm text-gray-500 mt-1;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Header & Navigation -->
+    <header id="header" class="bg-white/80 backdrop-blur-md shadow-md sticky top-0 z-50 transition-all duration-300">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="#hero" class="text-xl font-bold text-indigo-600">2025學術研討會</a>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="#about" class="text-gray-600 hover:text-indigo-600">關於研討會</a>
+                <a href="#dates" class="text-gray-600 hover:text-indigo-600">重要日程</a>
+                <a href="#submission" class="text-gray-600 hover:text-indigo-600">投稿須知</a>
+                <a href="#format" class="text-gray-600 hover:text-indigo-600">論文格式</a>
+                <a href="#contact" class="text-gray-600 hover:text-indigo-600">聯絡我們</a>
+                <a href="https://forms.gle/AHLPztz6yweWFVp26" target="_blank" class="bg-indigo-600 text-white px-4 py-2 rounded-full hover:bg-indigo-700 transition-colors">立即投稿</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden">
+                <i data-lucide="menu"></i>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#about" class="block py-2 text-gray-600 hover:text-indigo-600">關於研討會</a>
+            <a href="#dates" class="block py-2 text-gray-600 hover:text-indigo-600">重要日程</a>
+            <a href="#submission" class="block py-2 text-gray-600 hover:text-indigo-600">投稿須知</a>
+            <a href="#format" class="block py-2 text-gray-600 hover:text-indigo-600">論文格式</a>
+            <a href="#contact" class="block py-2 text-gray-600 hover:text-indigo-600">聯絡我們</a>
+            <a href="https://forms.gle/AHLPztz6yweWFVp26" target="_blank" class="block mt-2 bg-indigo-600 text-white text-center px-4 py-2 rounded-full hover:bg-indigo-700 transition-colors">立即投稿</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-bg text-white h-[60vh] md:h-[80vh] flex items-center justify-center">
+            <div class="text-center bg-black/30 p-8 rounded-xl">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">2025觀光休閒、餐旅暨產業經營管理</h1>
+                <h2 class="text-3xl md:text-5xl font-bold mb-6">全國學術研討會</h2>
+                <p class="text-lg md:text-xl mb-2"><i data-lucide="calendar" class="inline-block mr-2"></i>2025年12月19日 (星期五)</p>
+                <p class="text-lg md:text-xl mb-8"><i data-lucide="map-pin" class="inline-block mr-2"></i>東南科技大學 (新北市深坑區)</p>
+                <div class="space-x-4">
+                    <a href="https://forms.gle/AHLPztz6yweWFVp26" target="_blank" class="bg-white text-indigo-600 px-6 py-3 rounded-full font-bold hover:bg-gray-200 transition-transform hover:scale-105">摘要投稿</a>
+                    <a href="https://forms.gle/sN5TCnGiYhiEj12C9" target="_blank" class="bg-green-500 text-white px-6 py-3 rounded-full font-bold hover:bg-green-600 transition-transform hover:scale-105">報名參加</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">關於研討會</h2>
+                <p class="section-subtitle">促進學術交流，分享卓越研究成果</p>
+                
+                <div class="grid md:grid-cols-3 gap-8 text-center">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <i data-lucide="building-2" class="mx-auto h-12 w-12 text-indigo-500"></i>
+                        <h3 class="font-bold text-xl my-3">主辦單位</h3>
+                        <p class="text-gray-600">東南科技大學觀餐休閒與管理學院</p>
+                        <p class="text-gray-600">景文科技大學觀光餐旅學院</p>
+                        <p class="text-gray-600">醒吾科技大學觀光餐旅學院</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <i data-lucide="users" class="mx-auto h-12 w-12 text-indigo-500"></i>
+                        <h3 class="font-bold text-xl my-3">參加對象</h3>
+                        <p class="text-gray-600">大專院校觀光休閒、餐旅或管理相關科系之教師及研究生</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <i data-lucide="lightbulb" class="mx-auto h-12 w-12 text-indigo-500"></i>
+                        <h3 class="font-bold text-xl my-3">徵稿主題</h3>
+                        <p class="text-gray-600">觀光休閒、餐旅管理或產業經營管理相關研究主題</p>
+                    </div>
+                </div>
+
+                <div class="mt-12 bg-white p-8 rounded-lg shadow-lg">
+                    <h3 class="font-bold text-2xl text-center mb-6">詳細徵稿領域</h3>
+                    <div class="grid md:grid-cols-2 gap-x-8 gap-y-4">
+                        <div>
+                            <h4 class="font-bold text-lg text-indigo-700 mb-2">A. 觀光休閒與餐旅類</h4>
+                            <ul class="list-disc list-inside text-gray-700 space-y-1">
+                                <li>A1. 觀光休閒</li>
+                                <li>A2. 休閒遊憩</li>
+                                <li>A3. 休閒運動</li>
+                                <li>A4. 餐旅管理</li>
+                                <li>A5. 其他相關主題</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg text-green-700 mb-2">B. 管理類</h4>
+                            <ul class="list-disc list-inside text-gray-700 space-y-1">
+                                <li>B1. 企業經營相關議題</li>
+                                <li>B2. 物流與供應鏈管理</li>
+                                <li>B3. 財務金融相關議題</li>
+                                <li>B4. 策略管理與知識創新研究</li>
+                                <li>B5. 其他相關主題</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Important Dates Section -->
+        <section id="dates" class="py-20 bg-indigo-50">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">重要日程</h2>
+                <p class="section-subtitle">請務必留意以下關鍵時程</p>
+                
+                <div class="bg-white p-8 rounded-lg shadow-lg mb-12">
+                    <h3 class="text-xl font-bold text-center text-gray-700 mb-2">摘要投稿截止倒數</h3>
+                    <div id="countdown" class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-2xl mx-auto">
+                        <div class="countdown-box"><span id="days" class="countdown-number">0</span><span class="countdown-label">天</span></div>
+                        <div class="countdown-box"><span id="hours" class="countdown-number">0</span><span class="countdown-label">小時</span></div>
+                        <div class="countdown-box"><span id="minutes" class="countdown-number">0</span><span class="countdown-label">分鐘</span></div>
+                        <div class="countdown-box"><span id="seconds" class="countdown-number">0</span><span class="countdown-label">秒</span></div>
+                    </div>
+                </div>
+
+                <div class="relative max-w-4xl mx-auto">
+                    <div class="border-l-2 border-indigo-300 absolute h-full top-0 left-4"></div>
+                    <div class="space-y-8">
+                        <!-- Timeline Item -->
+                        <div class="flex items-center">
+                            <div class="bg-indigo-600 h-8 w-8 rounded-full flex items-center justify-center text-white z-10">1</div>
+                            <div class="ml-6 bg-white p-4 rounded-lg shadow-md w-full">
+                                <h4 class="font-bold">摘要投稿截止</h4>
+                                <p class="text-gray-600">114年10月15日 (星期三)</p>
+                            </div>
+                        </div>
+                        <!-- Timeline Item -->
+                        <div class="flex items-center">
+                            <div class="bg-indigo-600 h-8 w-8 rounded-full flex items-center justify-center text-white z-10">2</div>
+                            <div class="ml-6 bg-white p-4 rounded-lg shadow-md w-full">
+                                <h4 class="font-bold">審查結果通知</h4>
+                                <p class="text-gray-600">114年10月27日 (星期一)</p>
+                            </div>
+                        </div>
+                        <!-- Timeline Item -->
+                        <div class="flex items-center">
+                            <div class="bg-indigo-600 h-8 w-8 rounded-full flex items-center justify-center text-white z-10">3</div>
+                            <div class="ml-6 bg-white p-4 rounded-lg shadow-md w-full">
+                                <h4 class="font-bold">論文全文提交</h4>
+                                <p class="text-gray-600">114年11月20日 (星期四)</p>
+                            </div>
+                        </div>
+                        <!-- Timeline Item -->
+                        <div class="flex items-center">
+                            <div class="bg-indigo-600 h-8 w-8 rounded-full flex items-center justify-center text-white z-10">4</div>
+                            <div class="ml-6 bg-white p-4 rounded-lg shadow-md w-full">
+                                <h4 class="font-bold">定稿提交 & 報名截止</h4>
+                                <p class="text-gray-600">114年12月08日 (星期一)</p>
+                            </div>
+                        </div>
+                        <!-- Timeline Item -->
+                        <div class="flex items-center">
+                            <div class="bg-green-600 h-8 w-8 rounded-full flex items-center justify-center text-white z-10"><i data-lucide="star"></i></div>
+                            <div class="ml-6 bg-white p-4 rounded-lg shadow-md w-full">
+                                <h4 class="font-bold text-green-700">研討會日期</h4>
+                                <p class="text-gray-600">114年12月19日 (星期五)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Submission Guidelines Section -->
+        <section id="submission" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">投稿須知</h2>
+                <p class="section-subtitle">詳細流程與發表方式說明</p>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-white p-8 rounded-lg shadow-lg">
+                        <h3 class="font-bold text-xl mb-4 text-indigo-700">投稿與審查流程</h3>
+                        <ol class="list-decimal list-inside space-y-3 text-gray-700">
+                            <li>本次研討會採論文摘要審查，通過後再提交論文全文。</li>
+                            <li>於 <strong class="text-red-600">114年10月15日</strong> 前將「論文摘要暨發表人資料表」上傳至 <a href="https://forms.gle/AHLPztz6yweWFVp26" target="_blank" class="text-blue-600 hover:underline">電子表單</a>。</li>
+                            <li>摘要審查結果將以 email 通知。</li>
+                            <li>通過者請於 <strong class="text-red-600">114年11月20日</strong> 前將「論文全文(word+pdf)」及「著作權授權書」上傳至 <a href="https://forms.gle/sN5TCnGiYhiEj12C9" target="_blank" class="text-blue-600 hover:underline">電子表單</a>。</li>
+                        </ol>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-lg">
+                        <h3 class="font-bold text-xl mb-4 text-indigo-700">發表方式</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <h4 class="font-semibold">口頭報告</h4>
+                                <p class="text-gray-700">每篇發表以8-10分鐘為限，報告者須自行備妥PPT。</p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">海報發表</h4>
+                                <p class="text-gray-700">海報格式為直式A1尺寸(寬59.4cm x 高84.1cm)，發表者須於海報發表時段至海報旁解說。</p>
+                            </div>
+                            <p class="text-sm text-gray-500">*主辦單位保留最終發表方式調整的權利。</p>
+                        </div>
+                    </div>
+                    <div class="md:col-span-2 bg-green-50 border-l-4 border-green-500 text-green-800 p-6 rounded-r-lg">
+                        <h3 class="font-bold text-xl mb-2">報名與費用</h3>
+                        <p>論文一經接受，至少須有一位作者親自參與。請於 <strong class="text-red-600">114年12月8日</strong> 前完成線上報名。本研討會 <strong class="text-green-600">免收報名費</strong>。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Paper Format Section -->
+        <section id="format" class="py-20 bg-gray-100">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">論文格式</h2>
+                <p class="section-subtitle">請依下列規範撰寫論文，以利審查作業</p>
+                <div class="bg-white p-8 rounded-lg shadow-lg overflow-x-auto">
+                    <table class="w-full text-left">
+                        <thead class="bg-gray-200">
+                            <tr>
+                                <th class="p-3 font-bold">項目</th>
+                                <th class="p-3 font-bold">格式說明</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b">
+                                <td class="p-3 font-medium">基本規範</td>
+                                <td class="p-3">使用 Microsoft Word 撰寫，A4 尺寸，全文含圖表、參考文獻等以5至8頁為限。</td>
+                            </tr>
+                            <tr class="border-b bg-gray-50">
+                                <td class="p-3 font-medium">邊界設定</td>
+                                <td class="p-3">上/下 2.54 cm；左/右 3.17 cm。</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="p-3 font-medium">論文題目</td>
+                                <td class="p-3">中文：標楷體，20pt，粗體，置中。<br>英文：Time New Roman，20pt，粗體，置中。</td>
+                            </tr>
+                            <tr class="border-b bg-gray-50">
+                                <td class="p-3 font-medium">摘要</td>
+                                <td class="p-3">內文：中文(標楷體 12pt)、英文(Times New Roman 12pt)，不超過500字。</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="p-3 font-medium">內文</td>
+                                <td class="p-3">中文(標楷體 12pt)、英文(Times New Roman 12pt)，固定行高20pt。</td>
+                            </tr>
+                            <tr class="border-b bg-gray-50">
+                                <td class="p-3 font-medium">參考文獻</td>
+                                <td class="p-3">請依循APA格式撰寫。</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">聯絡我們</h2>
+                <p class="section-subtitle">若有任何疑問，歡迎隨時與我們聯繫</p>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-white p-8 rounded-lg shadow-lg">
+                        <div class="space-y-4 text-gray-700">
+                            <div class="flex items-center">
+                                <i data-lucide="user" class="w-5 h-5 mr-3 text-indigo-500"></i>
+                                <span>聯絡人：黃小姐</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i data-lucide="phone" class="w-5 h-5 mr-3 text-indigo-500"></i>
+                                <span>電話：(02) 8662-5985</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i data-lucide="mail" class="w-5 h-5 mr-3 text-indigo-500"></i>
+                                <span>E-mail：1060824@mail.tnu.edu.tw</span>
+                            </div>
+                            <div class="flex items-start">
+                                <i data-lucide="map" class="w-5 h-5 mr-3 text-indigo-500 mt-1"></i>
+                                <span>地址：222新北市深坑區北深路三段152號<br>(東南科技大學)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rounded-lg shadow-lg overflow-hidden">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3616.435593094522!2d121.60835367593297!3d24.98528744007621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a7a45e2780c1%3A0x133333343615f01a!2z5p2x5Y2X56eR5oqA5aSn5a24!5e0!3m2!1szh-TW!2stw!4v1724814343105!5m2!1szh-TW!2stw" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 觀光休閒、餐旅暨產業經營管理全國學術研討會. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Lucide Icons
+        lucide.createIcons();
+
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Countdown Timer
+        const countdownDate = new Date("2025-10-15T23:59:59").getTime();
+
+        const countdownFunction = setInterval(() => {
+            const now = new Date().getTime();
+            const distance = countdownDate - now;
+
+            if (distance < 0) {
+                clearInterval(countdownFunction);
+                document.getElementById("countdown").innerHTML = '<p class="col-span-full text-center text-red-500 font-bold text-xl">摘要投稿已截止</p>';
+                return;
+            }
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("days").innerText = days;
+            document.getElementById("hours").innerText = hours;
+            document.getElementById("minutes").innerText = minutes;
+            document.getElementById("seconds").innerText = seconds;
+
+        }, 1000);
+        
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                // Close mobile menu on click
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
